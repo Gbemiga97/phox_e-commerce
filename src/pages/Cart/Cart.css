@@ -1,0 +1,218 @@
+.container.cart__container{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+.container.cart__container .empty{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    margin-right: 2rem;
+}
+
+.container.cart__container .empty img{
+    width: 10rem;
+}
+
+.container.cart__container .empty h5{
+    font-size: 2rem; 
+    text-transform: uppercase;
+}
+
+.cart__items table{
+    width: 100%;
+}
+
+.cart__items table{
+    border: 0.2rem solid var(--color-ash);
+    border-collapse: collapse;
+    font-family: 'Montserrat';
+}
+
+
+.cart__items table tr th,
+.cart__items table tr td{
+    padding: 0.5rem;
+   text-align: start;
+   border: 0.2rem solid var(--color-ash);
+}
+
+table th{
+    background: #DCDCDC;
+}
+
+.cart__items .cartitem a{
+    color: lightskyblue;
+}
+
+.cart__items .cartitem .img__bg{
+    width: 2rem;
+    height: auto;
+    border-radius: 0.2rem;
+}
+
+.cartitem .img__bg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.cart__items .cartitem .remove__item svg{
+    background: transparent;
+    color: var(--color-red);
+    border-radius: 0.3rem;
+   transition: var(--transition);
+   cursor: pointer;
+}
+
+.cart__items .cartitem .remove__item svg:hover{
+    background: var(--color-red);
+    color: var(--color-white);
+}
+
+
+.cart__items .cartitem__input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1rem solid var(--color-black);
+    width: fit-content;
+    padding: 0.3rem;
+    width: 5rem;
+}
+
+.cart__items .cartitem__input .input{
+    background: transparent;
+}
+
+.cart__items .cartitem__input .icon{
+    display: flex;
+    flex-direction: column;
+    gap: 0.09rem;
+}
+
+.cart__items .cartitem__input .icon button svg{
+    font-size: 0.5rem;
+    height: 0.5rem;
+    cursor: pointer;
+}
+
+.cart__items .cartitem__input .icon button{
+  height: 0.7rem;
+}
+
+.cart__items .cartitem__input .icon button:last-of-type{
+    transform: rotate(180deg);
+}
+
+
+
+
+.cart__totals{
+    align-self: flex-end;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'Montserrat';
+}
+
+.cart__totals h3{
+    font-weight: 600;
+    color: #444;
+}
+
+.cart__totals p{
+    line-height: 1.8rem;
+}
+
+.cart__totals p span{
+    font-weight: bold;
+}
+
+.cart__totals table{
+    border: 0.2rem solid var(--color-ash);
+    height: 100%;
+    text-align: left;
+    border-bottom: none;
+}
+
+.cart__totals .shipping{
+    height: 6rem;
+}
+
+.cart__totals table{
+     display: grid;
+    grid-template-columns: 1fr 2fr; 
+    border-collapse: collapse;
+}
+
+
+.cart__totals table td:last-of-type{
+    font-weight: bold;
+}
+
+
+.cart__totals table th,
+.cart__totals table td{
+    display: block;
+    padding: 0.5rem;
+    border-bottom: 0.2rem solid var(--color-ash);
+}
+
+.cart__btns{
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+}
+
+.cart__btns button{
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: var(--transition);
+
+}
+
+.cart__btns button:first-of-type{
+    background: rgb(165, 112, 165);
+}
+
+.cart__btns button:last-of-type{
+    background: rgb(126, 224, 126);
+}
+
+.cart__btns button:first-of-type:hover{
+    background: rgb(161, 78, 161);
+}
+
+.cart__btns button:last-of-type:hover{
+    background: rgb(73, 196, 73);
+}
+
+@media screen and (max-width: 1024px) {
+    .cart__btns{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .cart__items{
+        overflow: auto;
+    }
+    .cart__totals{
+        width: 100%;
+    }
+}

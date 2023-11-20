@@ -1,0 +1,146 @@
+.container.contact__container{
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 10%;
+}
+
+
+.contact__content h5{
+    font-size: 1rem;
+    color: var(--color-red);
+    font-weight: 500;
+}
+
+
+.contact__content p{
+    font-size: 0.9rem;
+    font-family: 'Montserrat';
+    line-height: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+form input,
+textarea{
+    background: var(--color-linear-ash);
+    padding: 1.2rem 2rem;
+    border-radius: 75rem;
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+input::placeholder{
+    color: var(--text-color);
+}
+
+
+textarea{
+    border-radius: 1.25rem;
+    height: 15rem;
+    padding-top: 1.5rem;
+   
+}
+
+
+.contact__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+
+
+.contact__map{
+    width: 100%;
+    height: 40rem;
+}
+
+.contact__map img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    box-shadow: var(--color-ash) var(--box-shadow);
+}
+
+
+.contact__infos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 8rem;
+    place-items: center;
+}
+
+.contact__info{
+    display: flex;
+    gap: 2rem;
+}
+
+.contact__info-icon{
+    max-width: 4rem;
+    height: 3rem;
+}
+
+.contact__info-icon img{
+    width: 100%;
+    height: 100%;
+}
+
+.contact__info .title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.contact__info p{
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
+
+.contact__info .title h6{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+
+
+
+            /* MEDIA QUERIES (medium screen) */
+        
+@media screen and (max-width: 1024px) {
+    .container.contact__container{
+        grid-template-columns: 1fr;
+    }
+
+    .contact__infos{
+        margin: 16rem 2rem 2rem;
+        grid-template-columns: 1fr ;
+       gap: 4rem;
+    }
+
+    .contact__info{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+
+        /* MEDIA QUERIES( small screen) */
+
+@media screen and (max-width:640px) {
+    .contact__map{
+        height: 30rem;
+    }
+}

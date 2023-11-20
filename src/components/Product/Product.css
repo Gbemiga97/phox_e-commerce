@@ -1,0 +1,106 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 1.25rem;
+    gap: 0.8rem;
+    transition: var(--transition);
+    
+}
+
+.img__bg{
+    width: 22rem;
+    height: 16rem;
+    max-width: 20rem;
+    display: grid;
+    place-items: center;
+    background: var(--color-linear-ash);
+    border-radius: 1.25rem;
+    cursor: pointer;
+}
+
+.img__bg img{
+   max-width: 15rem; 
+}
+
+.btn__price{
+      margin-bottom: 1rem;
+      transition: var(--transition);
+      position: relative;
+      height: 2rem;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      transition: var(--transition);
+}
+
+.product p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    height: 1rem;
+    transition: var(--transition);
+    text-transform: capitalize;
+}
+
+.product:hover p{
+    font-size: 0.95rem;
+    color: var(--color-red);
+    font-weight: 700; 
+}
+
+.btn__price h4{
+    font-family: 'Montserrat';
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.btn__price button{
+    background: var(--color-red);
+    color: var(--color-white);
+    font-family: 'Montserrat';
+    padding: 0.5rem 1rem;
+    border-radius: 75rem;
+    cursor: pointer;
+    display: none;
+    font-size: 0.8rem;
+    transition: var(--transition);
+}
+
+
+.product:hover .btn__price h4{
+    display: none;
+}
+.product:hover .btn__price button{
+    display: block;
+}
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    .product p{
+        font-size: 0.8rem;
+    }
+    
+
+    .product:hover p{
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .img__bg img{
+        max-width: 13rem; 
+     }
+
+    .btn__price button{
+        display: block;
+    }
+
+    .product:hover .btn__price h4{
+        display: block;
+    }
+
+}

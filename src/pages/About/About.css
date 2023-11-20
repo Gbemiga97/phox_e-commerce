@@ -1,0 +1,101 @@
+.container.about__container{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+
+.about__content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 30rem;
+    align-items: flex-start;
+}
+
+.about__content h5{
+    text-transform: capitalize;
+    color: var(--color-red);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.about__content h2{
+    text-transform: capitalize;
+}
+
+
+.about__content p{
+    font-family: 'Montserrat';
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+.about__content p:first-of-type{
+    margin-top: 2rem;
+}
+
+.about__content a{
+    background: var(--color-red);
+    color: var(--color-white);
+    padding: 0.9rem 2.5rem;
+    border-radius: 75rem;
+    font-family: 'Montserrat';
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    transition: var(--transition);
+}
+
+
+.about__content a:hover{
+    background: var(--color-black);
+}
+
+
+
+
+.about__img{
+    width: 43rem;
+    height: auto;
+}
+
+
+.about__img img{
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: var(--color-ash) var(--box-shadow);
+}
+
+
+
+            /* MEDIA QUEIES (meduim screen) */
+
+@media screen and (max-width:1024px) {
+    
+    .about__content {
+        width: 100%;
+    }
+
+    .about__content p{
+        line-height: 1.2rem;
+    }
+}
+
+
+
+            /* MEDIA QUERIES (small screen) */
+
+@media screen and (max-width:640px) {
+    .container.about__container{
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
+
+    .about__img{
+        width: 100%;
+    }
+}

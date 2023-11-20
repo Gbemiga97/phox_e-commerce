@@ -1,0 +1,236 @@
+.summersale__wrapper{
+    margin: 14rem 0 8rem;
+}
+
+.container.summersale__container{
+    background: pink;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 10rem;
+    color: var(--color-white);
+    border-radius: 2rem;
+    position: relative;
+    transition: var(--transition);
+}
+.summersale__title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: 'Montserrat';
+    width: 40rem;
+    margin-right: auto;
+    gap: 1rem;
+}
+
+.summersale__title small{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.summersale__title h2{
+    font-size: 6.8rem;
+    font-weight: 900;
+    line-height: 5.6rem;
+    text-transform: uppercase;
+}
+
+.summersale__content{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end; 
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 20rem;
+}
+.summersale__content h6{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.summersale__content h3{
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
+.summersale__content p{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 0.85rem;
+}
+
+.summersale__content button{
+    padding: 0.6rem 2.3rem;
+    font-family: 'Montserrat';
+    background: var(--color-white);
+    border-radius: 75rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 5;
+}
+
+.summersale__content button:hover{
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+
+.container.summersale__container.beats{
+    background: radial-gradient(70.71% 70.71% at 50% 50%, #F24C55 0%, #F42C37 40%);
+}
+
+.container.summersale__container.beats:hover{
+    box-shadow: #F6565F var(--box-shadow);
+}
+
+.container.summersale__container.beats button{
+    color: var(--color-red);
+    transition: var(--transition);
+}
+
+.container.summersale__container.beats button:hover{
+    color: var(--color-white);
+}
+
+.container.summersale__container.beats .summersale__img{
+    position: absolute;
+    bottom: -30%;
+    width: 65rem;
+    right: 18rem;
+}
+
+.container.summersale__container.beats .summersale__img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.container.summersale__container.smart{
+    background: radial-gradient(70.71% 70.71% at 50% 50%, #51EC90 10%, #2DCC6E 46%);
+}
+
+.container.summersale__container.smart:hover{
+    box-shadow: #57D68B var(--box-shadow);
+}
+
+.container.summersale__container.smart button{
+    color: #2DCC6E;
+    transition: var(--transition);
+}
+
+.container.summersale__container.smart button:hover{
+    color: var(--color-white);
+}
+
+.container.summersale__container.smart .summersale__img{
+    position: absolute;
+    bottom: -30%;
+    width: 44rem;
+    height: auto;
+    left: 15rem;
+}
+.container.summersale__container.smart .summersale__img img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+             /* MEDIA QUERIES (medium screen) */
+
+@media screen and (max-width: 1024px) {
+    .container.summersale__container {
+        padding: 2rem;
+        justify-content: space-between;
+    }
+
+    .summersale__title h2{
+        font-size: 5rem;
+        line-height: 4.5rem;
+    }
+
+    .summersale__content h3{
+        font-size: 2rem;
+    }
+
+    .container.summersale__container.beats .summersale__img{
+        width: 45rem;
+        right: 4rem;
+        bottom: -25%;
+
+    }
+    .container.summersale__container.smart .summersale__img{
+        width: 33rem;
+        left: 2rem;
+       
+    }
+}
+
+
+
+
+             /* MEDIA QUERIES (small screen) */
+
+@media screen and (max-width: 640px) {
+    .container.summersale__container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 6rem 2rem;
+    }
+
+    .summersale__title{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        width: 100%;
+    }
+    .summersale__title h2{
+        font-size: 3rem;
+        line-height: 2.7rem;
+    }
+    .summersale__content{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .summersale__content h3{
+        font-size: 1.875rem;
+    }
+    .summersale__content p{
+        font-size: 0.75rem;
+    }
+
+    .summersale__content button{
+        margin-top: 0.5rem;
+    }
+
+    .container.summersale__container.beats .summersale__img{
+        bottom: 72%;
+        width: 20rem;
+        right: 5%;
+    }
+
+    .container.summersale__container.smart .summersale__img{
+        bottom: 78%;
+        width: 15rem;
+        left: 5rem;
+    }
+}
+
+

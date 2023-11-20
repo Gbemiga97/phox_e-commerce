@@ -1,0 +1,246 @@
+.productdetail__wrapper{
+    margin-top: 6rem;
+}
+
+.container.productdetail__container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.productdetail{
+    display: grid;
+    grid-template-columns: 55% 30%;
+    gap: 6%;
+    place-items: center;
+}
+
+.productdetail__img-bg{
+    width: 100%;
+    background: var(--color-linear-ash);
+    border-radius: 2rem;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productdetail__img-bg img{
+    width: 100%;
+    height: auto;
+}
+
+.productdetail__content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.productdetail__content h3:first-of-type{
+    font-size: 2.5rem;
+}
+
+.productdetail__content h3:last-of-type{
+    font-family: 'Montserrat';
+}
+
+.productdetail__content p{
+    font-size: 0.9rem;
+    color: var(--text-color);
+    width: 80%;
+    font-family: 'Montserrat';
+    line-height: 1.5rem;
+}
+
+.productdetail__addtocart{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.productdetail__input{
+    border: 0.1rem solid var(--color-black);
+    border-radius: 75rem;
+    width: 20%;
+    padding: 0.2rem 0.8rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.productdetail__input .icon{
+    display: flex;
+    flex-direction: column;
+}
+.productdetail__input .icon button:last-of-type{
+    transform: rotate(180deg);
+}
+
+.productdetail__input .icon button{
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.productdetail__input .icon button:hover{
+    background: var(--color-ash);
+}
+
+.productdetail__input input{
+    width: 100%;
+    font-size: 1.2rem;
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+
+.productdetail__addtocart .btn{
+    padding-inline: 2.5rem;
+}
+
+.productdetail__content p:last-child{
+    color: var(--color-black);
+}
+
+.productdetail__content p:last-child span{
+    color: var(--color-red);
+    text-transform: capitalize;
+}
+
+
+.productdetail__desc-review {
+    margin-top: 4rem;
+}
+
+.productdetail__desc-review nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    border-top: 0.1rem solid var(--color-ash);
+}
+
+.productdetail__desc-review nav a{
+    font-weight: 600;
+    height: 100%;
+    padding-top: 2rem;
+    width: 8rem;
+    text-align: center;
+}
+
+.activeP{
+    border-top: 0.2rem solid var(--color-red);
+    color: var(--color-black);
+}
+
+
+.desc__container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 2rem;
+    margin-inline: 12rem;
+}
+
+.desc__container h4{
+    font-size: 1.5rem;
+}
+
+.desc__container p{
+    font-size: 0.8rem;
+    font-family: 'Montserrat';
+    line-height: 1.5rem;
+    color: var(--text-color);
+}
+
+.review__container{
+    margin: 5rem;
+    margin-inline: 16rem;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.review__container h4{
+    font-size: 1.2rem;
+    
+}
+
+.review__input-container form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.review__input-container form textarea{
+    grid-column: span 2;
+}
+
+
+.review__container button{
+    align-self: flex-end;
+}
+
+
+
+.productcategories__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    margin-top: 6rem;
+}
+
+
+
+
+
+
+
+
+        /* MEDIA QUERIES (medium screen) */
+
+@media screen and (max-width: 1024px) {
+    .productdetail{
+        grid-template-columns: 1fr;
+        margin-bottom: 4rem;
+    }
+
+    .review__container{
+        margin-inline: 4rem;
+    }
+
+    .review__input-container form{
+        gap: 2rem;
+    }
+
+    .desc__container{
+        margin-inline: 0;
+    }
+}
+
+
+
+
+        /* MEDIA QUERIES (small screen) */
+
+@media screen and (max-width: 640px) {
+    .review__input-container form{
+        grid-template-columns:  1fr;
+    }
+
+    .review__container{
+        margin-inline: 2rem;
+        margin: 4rem 0 0;
+    }
+    .review__input-container form textarea{
+        grid-column: span 1;
+    }
+
+    .productdetail__img-bg{
+        height: auto;
+    }
+
+}

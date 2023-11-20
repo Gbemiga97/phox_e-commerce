@@ -1,0 +1,34 @@
+.recentnews__wrapper{
+    margin-top: 4rem;
+}
+
+.container.recentnews__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+
+        /* MEIDA QUERIES (medium screen) */
+
+@media screen and (max-width: 1024px) {
+    .container.recentnews__container{
+        gap: 1rem;
+    }
+}
+
+
+
+
+        /* MEDIA QUEREIS (small screen) */
+
+@media screen and (max-width: 640px) {
+    .container.recentnews__container{
+        grid-template-columns: 1fr;
+        gap: 6rem;
+    }
+
+}
+
+

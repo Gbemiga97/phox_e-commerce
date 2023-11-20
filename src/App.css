@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+            /* GOOGLE FONTS */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+              /* CSS VARIABLES */
+            
+:root{
+        /* COLORS */
+  --color-black: #000;
+  --color-white: #fff;
+  --color-red: #F42C37;
+  --color-ash: #CFCFCF;
+  --color-linear-ash: linear-gradient(98deg, #DCDCDC 54%, #EEE 68%);
+  --text-color: hsla(0, 0%, 0%, 0.4);
+
+        /* WIDTH */
+  --container-lg: 94%;
+  --container-md: 90%;
+
+      /* TRANSITION */
+  --transition: all 300ms ease-in-out;
+
+
+      /* BOX SHADOW */
+  --box-shadow: 0px 10px 36px 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+              /* RESET */
+
+*{
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  list-style: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+a{
+  color: var(--text-color);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family:'Poppins', sans-serif;
+  color: var(--color-black);
+  background: var(--color-white);
+  overflow-x: hidden;
+}
+
+.App{
+  margin-inline: auto;
+  width: 100%;
+  max-width: 100% ;
+  overflow: hidden;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+
+
+.container{
+  width: var(--container-lg);
+  margin-inline: auto;
+  max-width: 1920px;
+}
+
+.btn{
+  margin-top: 2rem;
+  padding: 0.8rem 4rem;
+  background: var(--color-red);
+  border-radius: 75rem;
+  align-self: flex-end;
+  color: var(--color-white);
+  font-family: 'Montserrat';
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:hover{
+  background: var(--color-black);
+}
+
+
+
+
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+
+
+      /* MEDIA QUERIES (big screen) */
+
+@media screen and (min-width: 640px) {
+  
+
+  .scale-up-center-cart {
+    -webkit-animation: scale-up-center-cart 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center-cart 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  
+  @-webkit-keyframes scale-up-center-cart {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  @keyframes scale-up-center-cart {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+  h1{
+    font-size: 3rem;
+  }
+  
+  h2{
+    font-size: 2.5rem;
+  }
+  
+  h3{
+    font-size: 1.5rem;
   }
 }
