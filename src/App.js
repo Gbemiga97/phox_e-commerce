@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Description, Footer, NavBar, Review } from './components';
 import { About, Blog, BlogDetail, Cart, Contact, Home, ProductDetail, Shop } from './pages';
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <ShopContextProvider>
-      <BrowserRouter>
+      <HashRouter>
       <NavBar />
       <Toaster />
       <Routes>
@@ -28,7 +28,7 @@ function App() {
         <Route path='cart' element={<Cart />} />
       </Routes>
       <Footer />
-      </BrowserRouter>
+      </HashRouter>
       </ShopContextProvider>
     </div>
   );
